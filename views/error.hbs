@@ -1,0 +1,39 @@
+<section id="hero" class=" position-relative overflow-hidden">
+    <div class="pattern-overlay pattern-right position-absolute">
+        <img src="/images/hero-pattern-right.png" alt="pattern">
+    </div>
+    <div class="pattern-overlay pattern-left position-absolute">
+        <img src="/images/hero-pattern-left.png" alt="pattern">
+    </div>
+    <div class="container text-center py-5 mt-5">
+        <div class="row my-5">
+            <div class="d-flex flex-wrap flex-column justify-content-center align-items-center">
+                <h2 class="page-title display-3 mt-5">{{message}}</h2>
+                <nav class="breadcrumb">
+                    <a class="breadcrumb-item" href="/">Home</a>
+                    <span class="breadcrumb-item active" aria-current="page">{{message}}</span>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="post-wrap py-5 no-padding-bottom">
+    <div class="container">
+        <div class="row g-5">
+            <main class="post-grid col">
+                <div class="row">
+                    <article class="post-item">
+                        <div class="post-content">
+                            <div class="post-description">
+                                <h3>{{error.status}}</h3>
+                                <pre>{{error.stack}}</pre>
+                            </div>
+
+                        </div>
+                    </article>
+                </div>
+            </main>
+        </div>
+    </div>
+</div>

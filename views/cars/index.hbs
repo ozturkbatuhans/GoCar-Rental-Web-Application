@@ -1,0 +1,19 @@
+ {{!-- ben yazdim ve olusturdum bu dosyayi --}}
+
+{{> menu }}
+
+{{> hero title=title }}
+
+<section class="container py-5">
+  <div class="row mb-5">
+    {{> form }}
+  </div>
+
+  <div class="row rental-swiper mb-5">
+    {{#each cars}}
+      {{> car this }}
+    {{/each}}
+  </div>
+</section>
+
+{{> footer }}

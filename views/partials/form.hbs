@@ -1,0 +1,38 @@
+ {{!-- ben yazdim ve olusturdum bu dosyayi --}}
+<form action="/cars" method="get">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3 mt-4 mt-lg-0">
+                    <label for="vehicle" class="label-style text-capitalize form-label">Vehicle type</label>
+                    <div class="input-group date ">
+                        <select name="vehicleType" class="form-select" id="vehicle" aria-label="Default select example">
+                            <option {{{isSelected type "" }}} value="">Select Vehicle Type</option>
+                            <option value="SUV" {{{isSelected type "SUV"}}}>SUV</option>
+                            <option value="Sport" {{{isSelected type "Sport"}}}>Sport</option>
+                            <option value="Sedan" {{{isSelected type "Sedan"}}}>Sedan</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mt-4 mt-lg-0">
+                    <label for="location" class="label-style text-capitalize form-label">Picking up location</label>
+                    <div class="input-group date">
+                        <input type="text" name="location" class="form-control p-3 position-relative" id="location"
+                            placeholder="Airport or anywhere" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mt-4 mt-lg-0">
+                    <label for="pick-up-date" class="label-style text-capitalize form-label">Picking up date</label>
+                    <div class="input-group date" id="datepicker1">
+                        <input type="date" name="pickupDate" class="form-control p-3" id="pick-up-date" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mt-4 mt-lg-0">
+                    <label for="return-date" class="label-style text-capitalize form-label">Returning date</label>
+                    <div class="input-group date" id="datepicker2">
+                        <input type="date" name="returnDate" class="form-control p-3" id="return-date" />
+                    </div>
+                </div>
+                <div class="d-grid gap-2 mt-4">
+                    <button class="btn btn-primary " type="submit">Find your car</button>
+                </div>
+            </div>
+        </form>

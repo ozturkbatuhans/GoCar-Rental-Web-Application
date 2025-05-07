@@ -1,0 +1,47 @@
+ {{!-- ben yazdim ve olusturdum bu dosyayi --}}
+
+{{> menu }}
+
+{{> hero title=car.type }}
+
+<section class="container py-5">
+  <div class="row">
+    <div class="col-lg-8 mx-auto">
+      <h2>Boek nu de {{car.type}}</h2>
+
+      <form action="/cars/{{car.id}}" method="POST">
+
+        <!-- Verborgen ID -->
+        <input type="hidden" name="carId" value="{{car.id}}">
+
+        <!-- Naam -->
+        <div class="mb-3">
+          <label for="name" class="form-label">Naam</label>
+          <input type="text" id="name" name="name" class="form-control" required>
+        </div>
+
+        <!-- E-mailadres -->
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mailadres</label>
+          <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+
+        <!-- Pick-up datum -->
+        <div class="mb-3">
+          <label for="pickupDate" class="form-label">Pick-up datum</label>
+          <input type="date" id="pickupDate" name="pickupDate" class="form-control" required>
+        </div>
+
+        <!-- Bericht -->
+        <div class="mb-3">
+          <label for="message" class="form-label">Bericht</label>
+          <textarea id="message" name="message" class="form-control" rows="4"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Bevestig reservatie</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+{{> footer }}

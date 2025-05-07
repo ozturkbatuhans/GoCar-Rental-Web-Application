@@ -1,0 +1,116 @@
+<!-- hero section start  -->
+<section id="hero" class=" position-relative overflow-hidden">
+    <div class="pattern-overlay pattern-right position-absolute">
+        <img src="/images/hero-pattern-right.png" alt="pattern">
+    </div>
+    <div class="pattern-overlay pattern-left position-absolute">
+        <img src="/images/hero-pattern-left.png" alt="pattern">
+    </div>
+    <div class="hero-content container text-center">
+        <div class="row">
+            <div class="detail mb-4">
+                <h1 class="">Find your <span class="text-primary"> rental car </span> </h1>
+                <p class="hero-paragraph">We have many best rental car collections.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- search section start  -->
+<section id="search">
+    <div class="container search-block p-5">
+        <!--ben yazdim -->
+        {{> form}}
+    </div>
+</section>
+
+<!-- process section start  -->
+<section id="process">
+    <div class=" process-content container">
+        <h2 class=" text-center my-5 pb-5">Our renting <span class="text-primary"> process </span> </h2>
+        <hr class="progress-line">
+        <div class="row process-block">
+            <div class="col-6 col-lg-3 text-start my-4">
+                <div class="bullet"></div>
+                <h5 class="text-uppercase mt-5"> Choose a vehicle </h5>
+                <p>Sed euismod mauris corper libero.</p>
+            </div>
+
+            <div class="col-6 col-lg-3 text-start my-4">
+                <div class="bullet"></div>
+                <h5 class="text-uppercase mt-5"> Pick location & date </h5>
+                <p>Nisi maecenas fermentum neque.</p>
+            </div>
+
+            <div class="col-6 col-lg-3 text-start my-4">
+                <div class="bullet"></div>
+                <h5 class="text-uppercase mt-5"> Book your car </h5>
+                <p>Mauris corper accumsan urna sed.</p>
+            </div>
+
+            <div class="col-6 col-lg-3 text-start my-4">
+                <div class="bullet"></div>
+                <h5 class="text-uppercase mt-5"> Finish process </h5>
+                <p>Orci duis ut lectus metus nam sette.</p>
+            </div>
+
+        </div>
+
+
+    </div>
+</section>
+
+<!-- rental section start  -->
+<section id="rental" class="position-relative">
+    <div class="container mt-5 py-5">
+        <h2 class=" text-center my-5">cars for <span class="text-primary"> rental </span> </h2>
+        <div class="row rental-swiper mb-5">
+            <!-- ben yazdimm -->
+        {{#each cars}}
+        {{> car}}
+        {{/each}}
+
+        </div>
+    </div>
+</section>
+
+<!-- testimonial section start  -->
+<section id="testimonial" class="position-relative">
+    <div class="pattern-overlay pattern-left position-absolute">
+        <img src="/images/testimonial-pattern.png" alt="pattern">
+    </div>
+    <div class="container my-5 py-5">
+        <div class="swiper testimonial-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide text-center">
+                    <div class="offset-2 col-8">
+                        <iconify-icon icon="mdi:format-quote-open" class="testimonial-icon"></iconify-icon>
+                        <p class="testimonial-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.The more content you provide about you. Quos saepe suscipit, nemo dolore sapiente!
+                        </p>
+                        <h5>James Rodrigo</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- call-to-action section start  -->
+<section id="action" class="position-relative">
+    <div class="pattern-overlay pattern-right position-absolute">
+        <img src="/images/call-to-action-pattern.png" alt="pattern">
+    </div>
+    <div class="container  py-5 my-5">
+        <div class="row py-5 ">
+            <div class=" col-10 col-sm-8 col-lg-6">
+                <h2 class="">Let's begin with <span class="text-primary">GoCar rental.</span> </h2>
+            </div>
+            <div class=" col-lg-6">
+                <p>Neque, vestibulum sed varius magna et at. Eu, adipiscing morbi augue justo. Nibh laoreet volutpat
+                    quis velit. Blandit aliquam donec sed morbi congue eget lorem viverra porta id lobortis.</p>
+                <a href="/contact" class="btn btn-primary mt-2">Contact us </a>
+            </div>
+        </div>
+    </div>
+</section>
